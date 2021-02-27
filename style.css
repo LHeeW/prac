@@ -138,7 +138,7 @@ ul{
     line-height: 60px;
     text-transform: uppercase;
 }
-@media(max-width:800px){
+@media(max-width:600px){
     .header-list, .content-list, .big-pic, .small-pic, #footer{
         width: auto;
         margin: 0 auto;
