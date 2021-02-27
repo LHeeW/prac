@@ -4,8 +4,7 @@ document.querySelectorAll('.pic-slides')[0].style.display = 'block';
 document.querySelectorAll('.curr')[0].style.background = 'white';
 var x = document.querySelectorAll('.pic-slides');
 var dots = document.querySelectorAll('.curr');
-setTimeout(showDiv,3000);
-showDivs(slideIndex);
+showDiv(slideIndex);
 
 function plusDivs(n){
     clearTimeout(timer);
