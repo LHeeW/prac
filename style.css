@@ -67,7 +67,7 @@ ul{
 
 /* container */
 
-.big-pic{
+.big-pic, .big-pic-list{
     height: 400px;
     max-width: 1000px;
 }
@@ -138,5 +138,29 @@ ul{
     line-height: 60px;
     text-transform: uppercase;
 }
-
+@media(max-width:1000px){
+    .header-list, .content-list, .big-pic, .small-pic, #footer{
+        width: auto;
+        margin: 0 auto;
+    }
+    .list-item{
+        display: block;
+        width: auto;
+    }
+    .pic-slides{
+        height: 310px;
+    }
+    .small-pic{
+        display: grid;
+        height: auto;
+        grid-template-rows: repeat(4,310px);
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cur-btn{
+        top: -270px;
+    }
+    .current-btn{
+        top: -170px;
+    }
+}
 /* ABOUT */
