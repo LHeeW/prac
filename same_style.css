@@ -21,7 +21,6 @@ ul{
     list-style: none;
 }
 
-/* SEASON */
 /* header */
 
 .header-list{
@@ -65,68 +64,6 @@ ul{
     background-color: rgba(169,169,169,.8);
 }
 
-/* container */
-
-.big-pic, .big-pic-list{
-    height: 400px;
-    max-width: 1000px;
-}
-.pic-slides{
-    display: none;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.cur-btn{
-    position: relative;
-    top: -230px;
-    display: flex;
-    justify-content: space-between;
-}
-.btn-left, .btn-right{
-    cursor: pointer;
-    font-size: 40px;
-    color: white;
-    padding: 0 10px;
-    background-color: gray;
-}
-.btn-left:hover, .btn-right:hover{
-    background-color: black;
-}
-.current-btn{
-    display: flex;
-    width: 100px;
-    margin: 0 auto;
-    position: relative;
-    top: -100px;
-    justify-content: space-between;
-}
-.curr{
-    cursor: pointer;
-    width: 12px;
-    height: 12px;
-    border-radius:10px;
-    border: 1px solid white;
-}
-
-.small-pic{
-    display: grid;
-    height: 650px;
-    margin-top: 40px;
-    grid-template-rows: repeat(2,300px);
-    grid-template-columns: repeat(2,470px);
-    justify-content: space-between;
-    align-content: space-between;
-}
-.small-pic-list{
-    width: 100%;
-    height: 100%;
-}
-
-.sp-slide{
-    width: 100%;
-    height: 100%;
-}
 
 /* footer */
 
@@ -139,6 +76,7 @@ ul{
     line-height: 60px;
     text-transform: uppercase;
 }
+
 @media(max-width:999px){
     .header-list, .content-list, .big-pic, .small-pic, #footer{
         width: auto;
@@ -148,24 +86,13 @@ ul{
         display: block;
         width: auto;
     }
-    .pic-slides{
-        height: 310px;
+    .item-a:nth-child(-n+3){
+        border: 0;
     }
-    .small-pic{
-        margin: 0;
-        display: grid;
-        height: auto;
-        grid-template-rows: repeat(4,310px);
-        grid-template-columns: repeat(1,1fr);
-    }
-    .cur-btn{
-        top: -270px;
-    }
-    .current-btn{
-        top: -170px;
+    .item:hover{
+        background-color: rgb(100,100,100);
     }
     #footer{
         margin-top: 20px;
     }
 }
-/* ABOUT */
